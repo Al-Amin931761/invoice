@@ -24,9 +24,9 @@
     </nav>
 
     <!-- input card -->
-    <section class="w-75 mx-auto mt-3 color-2 input-card">
+    <section class="mt-3 color-2 input-card">
         <p class="text-center color-1 p-3">Please enter the data...</p>
-        <div class="input-group input-group-lg px-3 pb-3">
+        <div class="input-group input-group-lg px-3 pb-3 w-75 mx-auto">
             <span class="input-group-text" id="inputGroup-sizing-lg">Buyer Details</span>
             <textarea class="form-control" id="buyer-details-input" rows="2"></textarea>
             <button class="btn btn-primary" id="detail-submit-btn">Submit</button>
@@ -121,11 +121,31 @@
                     </tr>
                     <tr>
                         <td colspan="3" class="fw-bold text-end">Grand Total</td>
-                        <td class="">$ <span id="tax">0</span></td>
+                        <td class="">$ <span id="grand-total">0</span></td>
                     </tr>
                 </tbody>
             </table>
         </div>
+
+        <div class="color-4 p-3">
+            <div class="row row-col-2 g-4">
+                <div class="col">
+                    <span class='text-warning'>Bank Transfer</span>
+                    <br>
+                    <span>Account Name: Al Amin Account Number: 987654321123 Code: 123123123123</span>
+                </div>
+
+                <div class="col">
+                    <div class="text-end">
+                        <p class='text-warning'>Total Amount</p>
+                        <p><span class="fs-2">$</span><span class='text-warning fw-bold fs-2'
+                                id="grand-total-2">0</span>
+                            <br>
+                            Taxes Included
+                        </p>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <!-- bootstrap -->
