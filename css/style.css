@@ -35,3 +35,40 @@ body {
     box-shadow: inset 7px 7px 14px #001630,
         inset -7px -7px 14px #003a7a;
 }
+
+.print-button,
+.download-button {
+    color: whitesmoke;
+    background-color: #292D3E;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.print-button:hover,
+.download-button:hover {
+    box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+    transform: translateX(-3px);
+}
+
+/* responsive input */
+@media only screen and (max-width: 576px) {
+    .input-size {
+        width: 100% !important;
+    }
+
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .input-size {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .input-size {
+        width: 75% !important;
+        margin: 0 auto;
+    }
+}

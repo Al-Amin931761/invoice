@@ -21,6 +21,10 @@ addDetailsButton.addEventListener('click', function () {
     const itemPrice = document.getElementById('item-price-input');
     const itemQuantity = document.getElementById('item-quantity-input');
 
+    if (itemName.value == '' || itemPrice.value < 0 || itemQuantity.value < 0) {
+        return;
+    }
+
     // table data
     const tableInfo = document.getElementById('table-info');
     const totalPrice = parseFloat(itemPrice.value) * parseFloat(itemQuantity.value);
@@ -81,5 +85,3 @@ function calculateSubTotal() {
     }
     return subTotal;
 };
-
-
